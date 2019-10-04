@@ -4,6 +4,19 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 public class FirstGrade implements Classroom {
+    private String chairType = "leather";
+    private boolean hasMacbooks = true;
+
+    public LinkedList<String> advancedStudents() {
+        LinkedList<String> apStudents = new LinkedList<String>();
+        apStudents.add("Alex");
+        apStudents.add("Bobby");
+        apStudents.add("Chad");
+        apStudents.add("Derek");
+        apStudents.add("Edgar");
+        return apStudents;
+    }
+
     @Override
     public int getNumberOfStudents() {
         return 26;
