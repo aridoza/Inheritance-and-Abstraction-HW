@@ -6,6 +6,7 @@ import java.util.LinkedList;
 public class FirstGrade implements Classroom {
     private String chairType = "leather";
     private boolean hasMacbooks = true;
+    private LinkedList<String> extracurricularActivities = new LinkedList<>(Arrays.asList("Arts & Crafts", "Wiffle Ball", "Mini Golf", "Storytime"));
 
     public LinkedList<String> advancedStudents() {
         LinkedList<String> apStudents = new LinkedList<String>();
@@ -34,7 +35,7 @@ public class FirstGrade implements Classroom {
 
     @Override
     public LinkedList<String> getSubjects() {
-        LinkedList<String> subjects = new LinkedList<String>(Arrays.asList(
+        LinkedList<String> subjects = new LinkedList<>(Arrays.asList(
                 "History", "Math", "Social Studies", "Science"));
         return subjects;
     }
@@ -46,6 +47,18 @@ public class FirstGrade implements Classroom {
 
     @Override
     public String secondaryTeacher() {
-        return "Mrs. Segundo";
+        return "Mrs. Primera";
+    }
+
+    public String getChairType() {
+        return chairType;
+    }
+
+    public boolean hasMacbooks() {
+        return hasMacbooks;
+    }
+
+    public LinkedList<String> getExtracurricularActivities() {
+        return extracurricularActivities;
     }
 }
